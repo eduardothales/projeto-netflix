@@ -1,9 +1,39 @@
-body{
-    
+:root{ /*definindo variaveis dentro do css que podem ser usadas no codigo*/
+    --vermelha: #e50914;
+    --preta: #141414;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .container{
+    display: flex; /*utiliza o flexbox*/
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /*cria o espaçameno entre as tags dentro do container, h2 e nav*/
+}
+
+header .logo{
+    color: var(--vermelha);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+header nav a{ /*altera todas as informações dos links dentro do header*/
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+header nav a:hover{ /*para mudar a cor quando o mouse passa por cima */
+    color: #ffffff;
 }
