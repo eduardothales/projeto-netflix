@@ -58,6 +58,47 @@ header nav a:hover{ /*para mudar a cor quando o mouse passa por cima */
 }
 
 .titulo{
+    margin-top: 15%;
     font-size: 40px;
-    margin-bottom: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: whitesmoke;
+
+    padding: 15px; /*quando passsa so um valor refere-se as posicoes do botao*/
+    /*qunado passa dois valores refere-se, o primeiro é cima e baixo e o segundo direita e esquerda*/
+    /*se passar os quatro valores: cima, direita, baixo e esquerda*/
+    margin-right: 10px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.botao:hover{
+    background-color: whitesmoke;
+    color: var(--preta);
+}
+
+.botao i{
+    margin-right: 10px;
+}
+
+.container{
+    margin-left: 30px;
+
+}
+
+.filme-principal .container{
+    width: 50%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
 }
